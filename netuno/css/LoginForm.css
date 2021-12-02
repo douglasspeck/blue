@@ -1,0 +1,22 @@
+#LoginForm {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px;
+    display: flex; 
+    justify-content: center;
+}
+
+#LoginForm > div {
+    color: white;
+}
+
+#LoginForm input {
+    color: black;
+}
+
+#LoginForm a {
+    color: white;
+    margin-right: 20px;
+}
