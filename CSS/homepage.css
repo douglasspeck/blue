@@ -15,14 +15,12 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    row-gap: calc(3 * var(--x));
 }
 
 .neptune {
-    margin-bottom: calc(2 * var(--x));
     width: calc(20 * var(--x));
     height: calc(20 * var(--x));
-    --b1: #283E51;
-    --b2: #4DA0B0;
     background: linear-gradient(to top right, var(--b1), var(--b2));
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -40,7 +38,7 @@ body {
     animation: translateBackground 30s infinite linear; 
     opacity: 0.4;
     z-index: 3;
-  }
+}
 
 .house {
     height: calc(6 * var(--x));
@@ -60,6 +58,10 @@ body {
     --y: 0.1;
     z-index: 1;
     transform: scale(var(--y)) translateZ(0); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+}
+
+.welcome-text {
+    z-index: 0;
 }
 
 @keyframes walk-cycle {  

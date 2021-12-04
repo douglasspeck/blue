@@ -1,0 +1,45 @@
+.audio-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: var(--x);
+}
+
+.audio-container details {
+    width: 100%;
+    max-height: calc(15 * var(--x));
+}
+
+.audio-container .song-list {
+    background-color: var(--b1);
+    height: calc(10 * var(--x));
+    overflow-y: auto;
+}
+
+.audio-container p {
+    height: calc(2 * var(--x));
+    display: flex;
+    align-items: center;
+}
+
+.audio-container summary {
+    background-color: var(--b2);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: calc(0.5 * var(--x));
+}
+
+.controls input {
+    display: none;
+}
+
+.controls label {
+    display: inline-block;
+    background-color: #fff;
+    height: calc(2 * var(--x));
+    width: calc(2 * var(--x));
+    cursor: pointer;
+}
