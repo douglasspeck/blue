@@ -1,0 +1,107 @@
+/* Font-families */
+
+h1, h2, h3, h4, h5, h6, .montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #ffffff33;
+}
+
+/* Font-sizes */
+
+body {
+    font-size: calc(1.3 * var(--x));
+    color: #fff;
+}
+
+.xg-title {
+    font-size: calc(4.5 * var(--x));
+}
+
+.gg-title {
+    font-size: calc(4 * var(--x));
+}
+
+.g-title, .xg-text {
+    font-size: calc(3.5 * var(--x));
+}
+
+.title, .gg-text {
+    font-size: calc(3 * var(--x));
+}
+
+.m-title, .g-text {
+    font-size: calc(2.5 * var(--x));
+}
+
+.p-title, .m-text {
+    font-size: calc(2 * var(--x));
+}
+
+.pp-title, .p-text {
+    font-size: calc(1.5 * var(--x));
+}
+
+.xp-title, .pp-text {
+    font-size: calc(1 * var(--x));
+}
+
+/* Font-transformations */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Mobile */
+
+@media only screen and (orientation: portrait){
+
+    /* Font Sizes (Mobile) */
+
+    body {
+        font-size: calc(1.5 * var(--x));
+    }
+
+    .xg-title {
+        font-size: calc(5 * var(--x));
+    }
+    
+    .gg-title {
+        font-size: calc(4.5 * var(--x));
+    }
+    
+    .g-title, .xg-text {
+        font-size: calc(4 * var(--x));
+    }
+    
+    .title, .gg-text {
+        font-size: calc(3.5 * var(--x));
+    }
+    
+    .m-title, .g-text {
+        font-size: calc(3 * var(--x));
+    }
+    
+    .p-title, .m-text {
+        font-size: calc(2.4 * var(--x));
+    }
+    
+    .pp-title, .p-text {
+        font-size: calc(1.7 * var(--x));
+    }
+    
+    .xp-title, .pp-text {
+        font-size: calc(1.5 * var(--x));
+    }
+}

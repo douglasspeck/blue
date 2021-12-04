@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#welcome-screen {
+    display: flex;
+    width: calc(30 * var(--x));
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.neptune {
+    margin-bottom: calc(2 * var(--x));
+    width: calc(20 * var(--x));
+    height: calc(20 * var(--x));
+    --b1: #283E51;
+    --b2: #4DA0B0;
+    background: linear-gradient(to top right, var(--b1), var(--b2));
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: relative;
+    animation: rotation 15s infinite linear;
+}
+
+#welcome-screen .clouds{
+    display: block;
+    transform: translateX(25%);
+    background: url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+    width: calc(20 * var(--x));
+    height: calc(20 * var(--x));
+    border-radius:50%;
+    animation: translateBackground 30s infinite linear; 
+    opacity: 0.4;
+    z-index: 3;
+  }
+
+.house {
+    height: calc(6 * var(--x));
+    position: absolute;
+    top: calc(-4 * var(--x));
+    left: 40%;
+}
+
+.cat {
+    animation: walk-cycle 1s steps(12) infinite;
+    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: -90px;
+    left: calc(50% - 200px);
+    --y: 0.1;
+    z-index: 1;
+    transform: scale(var(--y)) translateZ(0); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+}
+
+@keyframes walk-cycle {  
+    0% { background-position: 0 0; } 
+    100% { background-position: 0 -2391px } 
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(359deg) }
+}
+
+@keyframes translateBackground{
+    0% {
+        background-position-x: 0;
+        transform: translateX(25%) rotate(0deg);
+    }
+    100%{
+        background-position-x:-600px;
+        transform: translateX(25%) rotate(359deg);
+    }
+}
