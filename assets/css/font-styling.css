@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+}
+
+a * {
+    text-decoration: none !important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}

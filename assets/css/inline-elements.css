@@ -1,0 +1,8 @@
+abbr {
+    color: inherit;
+    text-decoration: underline solid 2px;
+}
+
+span > a[title="Get a direct link"] {
+    display: none !important;
+}

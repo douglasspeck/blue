@@ -1,0 +1,51 @@
+:root {
+    /* PALLETE: https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/ */
+    --x: calc(0.5vw + 0.5vh);
+    --c1: #7db5f5;
+    --c2: #787ff6;
+    --c3: #4adede;
+    --c4: #1ca7ec;
+    --c5: #1f2f98;
+    --g0: #222222;
+    --g1: #666666;
+    --g2: #EEEEEE;
+    --grad-1: linear-gradient(
+        to right,
+        var(--c3),
+        var(--c4)
+    );
+    --shf: 4.9406564584124654e-324;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    z-index: inherit;
+    font-size: inherit;
+    color: var(--g0);
+    hyphens: auto;
+}
+
+html, body {
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+body.dark {
+    background-color: var(--g0);
+    color: #fff;
+}
+
+body.dark * {
+    color: #fff;
+}
+
+main {
+    margin-top: 15vh;
+    min-height: 85vh;
+}

@@ -1,0 +1,41 @@
+#landing {
+    grid-template-rows: 1fr;
+    height: 85vh;
+    overflow: hidden;
+}
+
+#landing > div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#landing > .landing-text {
+    flex-direction: column;
+}
+
+#landing > .landing-images {
+    position: relative;
+}
+
+#landing > .landing-images > img{
+    position: absolute;
+    width: 55%;
+    transform: translate(50%, -25%);
+}
+
+#landing > .landing-images > img:last-child{
+    transform: translate(25%, 0);
+}
+
+#landing h2 {
+    font-size: 3em;
+}
+
+#landing p {
+    font-size: 1.5em;
+}
+
+#landing .landing-text {
+    text-align: left;
+}
