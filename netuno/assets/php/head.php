@@ -46,36 +46,16 @@ echo
         <link href="//fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">';
 
         echo '<!-- CSS Stylesheets -->';
-        for ($i = 0; $i < count($css); $i++) {
-            echo '<link rel="stylesheet" href="CSS/' . $css[$i] . '.css" type="text/css">';
+        $css = array_splice(scandir('../netuno/assets/css'), 2);
+        foreach ($css as $css) {
+            echo '<link rel="stylesheet" href="../netuno/assets/css/' . $css . '" type="text/css">';
         };
 
         echo '<!-- Scrypts -->';
-        for ($i = 0; $i < count($js); $i++) {
-            echo '<script src="JS/' . $js[$i] . '.js"></script>';
+        $js = array_splice(scandir('../netuno/assets/js'), 2);
+        foreach ($js as $js) {
+            echo '<script src="../netuno/assets/js/' . $js . '"></script>';
         };
         
-    echo '
-        <link rel="shortcut icon" href="IMG/favicon/favicon.ico">
-        <link rel="icon" sizes="16x16 32x32 64x64" href="IMG/favicon/favicon.ico">
-        <link rel="icon" type="image/png" sizes="196x196" href="IMG/favicon/favicon-192.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="IMG/favicon/favicon-160.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="IMG/favicon/favicon-96.png">
-        <link rel="icon" type="image/png" sizes="64x64" href="IMG/favicon/favicon-64.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon/favicon-32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="IMG/favicon/favicon-16.png">
-        <link rel="apple-touch-icon" href="IMG/favicon/favicon-57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="IMG/favicon/favicon-114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="IMG/favicon/favicon-72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="IMG/favicon/favicon-144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="IMG/favicon/favicon-60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="IMG/favicon/favicon-120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="IMG/favicon/favicon-76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="IMG/favicon/favicon-152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="IMG/favicon/favicon-180.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
-        <meta name="msapplication-TileImage" content="IMG/favicon/favicon-144.png">
-        <meta name="msapplication-config" content="IMG/favicon/browserconfig.xml">
-        
-        </head>';
+    echo '</head>';
 ?>
