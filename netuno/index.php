@@ -5,7 +5,7 @@
         $keywords = 'DaBlue, Blue, Bastos, Deschamps';
         $css = ['main','fonts','homepage', 'homepage-mobile', 'stars', 'audio'];
         $js = ['music'];
-        include '../netuno/assets/php/head.php';
+        include '../assets/php/head.php';
     ?>
     <body>
         <section id="background">
@@ -62,8 +62,6 @@
                 </form>
             </div>
         </section>
-
-        <!-- Scripts -->
-        <script type="text/javascript" src="../netuno/assets/js/music.js"></script>
+        <?php include '../assets/php/scripts.php' ?>
     </body>
 </html>

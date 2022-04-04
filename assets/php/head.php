@@ -46,15 +46,9 @@ echo
         <link href="//fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">';
 
         echo '<!-- CSS Stylesheets -->';
-        $css = array_splice(scandir('../netuno/assets/css'), 2);
+        $css = array_splice(scandir('./assets/css'), 2);
         foreach ($css as $css) {
-            echo '<link rel="stylesheet" href="../netuno/assets/css/' . $css . '" type="text/css">';
-        };
-
-        echo '<!-- Scrypts -->';
-        $js = array_splice(scandir('../netuno/assets/js'), 2);
-        foreach ($js as $js) {
-            echo '<script src="../netuno/assets/js/' . $js . '"></script>';
+            echo '<link rel="stylesheet" href="./assets/css/' . $css . '" type="text/css">';
         };
         
     echo '</head>';
